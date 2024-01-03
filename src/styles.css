@@ -14,7 +14,10 @@
 }
 
 body {
-  padding-top: 100px;
+  transition: all 1s;
+  scroll-behavior: smooth;
+  justify-items: center;
+  align-items: center;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -29,14 +32,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Mono", sans-serif;
+  color: #dddbdb;
 }
 
 .App {
-  position: relative;
-  font-family: sans-serif;
-  text-align: center;
-  width: 100vh;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .scene {
@@ -48,8 +49,11 @@ body {
 }
 
 .card {
-  margin: 0px 50px 400px 50px;
-  position: static;
+  flex: auto;
+  margin: 200px 50px 400px 50px;
+  width: fit-content;
+  max-width: 500px;
+  position: relative;
   font-family: sans-serif;
   text-align: center;
   backdrop-filter: blur(2px);
@@ -58,5 +62,44 @@ body {
   border: solid;
   border-radius: 0.75rem;
   border-width: 1px;
-  border-color: #154c9e;
+  border-color: rgb(171, 171, 171);
+}
+
+nav {
+  position: sticky;
+  width: 175px;
+  min-width: 175px;
+  max-width: 175px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  margin-right: 50px;
+  z-index: 99;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background-color: #1b1b1b69;
+  padding: 20vh 1rem 0.5rem 1rem;
+}
+
+li {
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  margin: 0.5rem;
+  list-style: none;
+  color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  font-weight: 500;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+.cont {
+  position: relative;
 }
