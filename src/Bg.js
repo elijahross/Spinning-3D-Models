@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls } from "@react-three/drei";
@@ -38,7 +39,7 @@ const Model = () => {
 
 const Bg = () => {
   return (
-    <div class="scene">
+    <div className="scene">
       <Canvas camera={{ position: [-5, 0.2, -0.2], fov: 30, near: 1, far: 10 }}>
         <Suspense fallback={<> Loading... </>}>
           <ambientLight intensity={1} />
@@ -51,3 +52,4 @@ const Bg = () => {
 };
 
 export default Bg;
+/* eslint-enable */

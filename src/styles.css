@@ -53,6 +53,7 @@ body {
   border-radius: 0.75rem;
   border-width: 1px;
   border-color: rgb(171, 171, 171);
+  transition: all 1s;
 }
 
 nav {
@@ -94,4 +95,22 @@ a:hover {
 .Contingent {
   display: flex;
   flex-direction: column;
+}
+
+.slideIn {
+  animation: inn 1s ease-in both;
+}
+@keyframes inn {
+  from {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.hide {
+  opacity: 0;
 }

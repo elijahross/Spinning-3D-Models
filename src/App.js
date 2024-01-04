@@ -2,13 +2,14 @@ import "./styles.css";
 import React from "react";
 import Bg from "./Bg";
 import Navbar from "./Navbar";
+import Section02 from "./Section02";
 
 export default function App() {
   return (
     <div className="App">
       <Navbar />
       <Bg />
-      <div id="car" className="Contingent">
+      <div className="Contingent">
         <section id="hero" className="card">
           <h2>Phosphate Group</h2>
           <br />
@@ -18,15 +19,7 @@ export default function App() {
             the outer edges of the DNA molecule.
           </p>
         </section>
-        <section id="about" className="card">
-          <h2>Deoxyribose Sugar</h2>
-          <br />
-          <p>
-            Deoxyribose is a five-carbon sugar that makes up the central part of
-            each nucleotide. The deoxyribose sugar molecules link together to
-            form the sugar-phosphate backbone of the DNA strand.
-          </p>
-        </section>
+        <Section02 />
         <section id="projects" className="card">
           <h2>Nitrogenous Bases</h2>
           <br />
