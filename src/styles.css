@@ -1,16 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 :root {
-  --foreground-rgb: 23, 23, 23;
-  --background-start-rgb: 247, 247, 247;
-  --background-end-rgb: 214, 219, 220;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 247, 247, 247;
-    --background-start-rgb: 31, 31, 31;
-    --background-end-rgb: 31, 31, 31;
-  }
+  --foreground-rgb: 247, 247, 247;
+  --background-start-rgb: 31, 31, 31;
+  --background-end-rgb: 31, 31, 31;
 }
 
 body {
@@ -52,7 +44,6 @@ body {
   margin: 200px 50px 400px 50px;
   width: fit-content;
   max-width: 500px;
-  position: relative;
   font-family: sans-serif;
   text-align: center;
   backdrop-filter: blur(2px);

@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <Navbar />
       <Bg />
-      <div className="Contingent">
+      <div id="car" className="Contingent">
         <section id="hero" className="card">
           <h2>Phosphate Group</h2>
           <br />
@@ -17,7 +17,6 @@ export default function App() {
             the structure of DNA, the phosphate groups form the `backbone` or
             the outer edges of the DNA molecule.
           </p>
-          <div className="lightm" />
         </section>
         <section id="about" className="card">
           <h2>Deoxyribose Sugar</h2>
@@ -27,7 +26,6 @@ export default function App() {
             each nucleotide. The deoxyribose sugar molecules link together to
             form the sugar-phosphate backbone of the DNA strand.
           </p>
-          <div className="lightb" />
         </section>
         <section id="projects" className="card">
           <h2>Nitrogenous Bases</h2>
@@ -39,7 +37,6 @@ export default function App() {
             pairs with Cytosine (C). These base pairs are held together by
             hydrogen bonds.
           </p>
-          <div className="lightf" />
         </section>
         <section id="contact" className="card">
           <h2>In summary</h2>
